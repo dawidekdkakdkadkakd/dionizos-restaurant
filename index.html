@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dionizos - Grecka Restauracja w centrum Bydgoszczy. Oryginalne smaki, wysoka jakość i niezapomniana atmosfera." />
+  <title>Dionizos | Grecka Restauracja Bydgoszcz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f0f4f8;
+      color: #212121;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1f2a44;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: #f4f4f4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+    .logo {
+      height: 50px;
+    }
+    .hero {
+      background-color: #e0ebff;
+      color: #1f2a44;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      color: #1f2a44;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    #about p {
+      font-size: 1.7rem;
+    }
+    h3 {
+      color: #37474f;
+    }
+    .menu-category ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
+    .menu-category li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    blockquote {
+      font-style: italic;
+      background: #e3f2fd;
+      padding: 1rem;
+      margin: 1rem auto;
+      border-left: 5px solid #1f2a44;
+      max-width: 800px;
+      position: relative;
+    }
+    blockquote::before {
+      content: '★ ★ ★ ★ ★';
+      display: block;
+      color: #ffc107;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .user-name {
+      display: block;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: right;
+      font-style: normal;
+    }
+    footer {
+      background-color: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <img src="logo.png" alt="Dionizos Logo" class="logo" />
+      <ul>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#reviews">Opinie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h1>Grecka Restauracja Dionizos</h1>
+      <p>Autentyczna kuchnia grecka w sercu Bydgoszczy</p>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>O nas</h2>
+    <p>Dionizos to nie tylko restauracja – to podróż do serca Grecji. Nasze dania powstają z oryginalnych, wysokiej jakości składników, a wystrój wnętrza przenosi Cię wprost na grecką wyspę. W centrum Bydgoszczy stworzyliśmy miejsce, gdzie tradycja spotyka nowoczesność. Dzięki pasji naszych kucharzy i zaangażowaniu zespołu każda wizyta staje się wyjątkowym doświadczeniem.</p>
+    <p>Naszą dumą jest zespół – pełen energii, wiedzy i serca do gotowania. To dzięki nim Dionizos cieszy się zaufaniem i uznaniem klientów.</p>
+    <p><strong>Właściciele:</strong> Dawid Will i Michał Szarata</p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Menu</h2>
+    <div class="menu-category">
+      <h3>Przystawki</h3>
+      <ul>
+        <li>Tzatziki z pitą – 16 zł</li>
+        <li>Oliwki Kalamata & ser feta – 22 zł</li>
+      </ul>
+      <h3>Sałatki</h3>
+      <ul>
+        <li>Sałatka Grecka Horiatiki – 25 zł</li>
+        <li>Sałatka z pieczonym burakiem i fetą – 28 zł</li>
+        <li>Sałatka z ciecierzycą i jogurtem – 26 zł</li>
+      </ul>
+      <h3>Desery</h3>
+      <ul>
+        <li>Jogurt grecki z dodatkami – 22 zł</li>
+        <li>Baklava – 20 zł</li>
+        <li>Galaktoboureko – 25 zł</li>
+      </ul>
+      <h3>Pity</h3>
+      <ul>
+        <li>Pita z kurczakiem souvlaki – 30 zł</li>
+        <li>Pita z halloumi i warzywami – 28 zł</li>
+        <li>Pita z wołowiną stifado – 38 zł</li>
+        <li>Pita z gyros wieprzowy – 32 zł</li>
+      </ul>
+      <h3>Napoje</h3>
+      <ul>
+        <li>Lemoniada domowa – 15 zł</li>
+        <li>Woda z miętą i cytryną – 10 zł</li>
+        <li>Sok pomarańczowy świeżo wyciskany – 12 zł</li>
+        <li>Sok z granatów (świeży) – 16 zł</li>
+        <li>Herbata grecka (Tsai tou vounou) – 12 zł</li>
+        <li>Kawa grecka (mała czarna) – 10 zł</li>
+        <li>Wino białe (150 ml) – 20 zł</li>
+        <li>Wino czerwone (150 ml) – 20 zł</li>
+        <li>Woda gazowana – 5 zł</li>
+        <li>Woda niegazowana – 5 zł</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="galeria1.jpg" alt="Zdjęcie restauracji 1">
+      <img src="galeria2.jpg" alt="Zdjęcie restauracji 2">
+      <img src="galeria3.jpg" alt="Zdjęcie restauracji 3">
+      <img src="galeria4.jpg" alt="Zdjęcie restauracji 4">
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2>Opinie</h2>
+    <blockquote>
+      Niesamowita atmosfera i jedzenie jak w Grecji! Polecam każdemu.
+      <span class="user-name">– Anna K.</span>
+    </blockquote>
+    <blockquote>
+      Autentyczne smaki, świetna obsługa, piękny wystrój. Czułem się jak na wakacjach.
+      <span class="user-name">– Piotr W.</span>
+    </blockquote>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontakt</h2>
+    <p><strong>Adres lokalu:</strong> ul. Focha 10, Bydgoszcz</p>
+    <p><strong>Godziny otwarcia:</strong><br>Wtorek - Czwartek: 12:00 - 22:00<br>Piątek - Niedziela: 12:00 - 00:00</p>
+    <p><strong>Numer telefonu:</strong> +48 123 456 789</p>
+    <p><strong>Adres e-mail:</strong> dionizos@restauracja.pl</p>
+    <p><strong>Social media:</strong><br>Instagram: @dionizos<br>TikTok: @restauracja.dionizos</p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dionizos. Wszystkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
